@@ -2,7 +2,7 @@
 // 'football_helmet/scene.gltf'
 // 'newHelmet/newscene.gltf'
 const SETTINGS = {
-  gltfModelURL: 'cap2/newscene.gltf',
+  gltfModelURL: 'newHelmet/newscene.gltf',
   // cubeMapURL: 'Bridge2/',
   offsetYZ: [0.3, 0], // offset of the model in 3D along vertical and depth axis
   scale: 2.5

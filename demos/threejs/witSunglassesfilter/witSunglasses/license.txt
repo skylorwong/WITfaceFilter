@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sunglasses free
+* source:	https://sketchfab.com/3d-models/sunglasses-free-3b31fcf2f9e54b9ca86e0e29ca86d3fb
+* author:	JonnyMANSON (https://sketchfab.com/JonnyMANSON)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sunglasses free" (https://sketchfab.com/3d-models/sunglasses-free-3b31fcf2f9e54b9ca86e0e29ca86d3fb) by JonnyMANSON (https://sketchfab.com/JonnyMANSON) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
