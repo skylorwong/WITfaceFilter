@@ -1,37 +1,21 @@
 // SETTINGS of this demo:
-// 'football_helmet/scene.gltf'
-// 'newHelmet/newscene.gltf'
 const SETTINGS = {
   gltfModelURL: 'lionsHelmet/newscene.gltf',
-  // cubeMapURL: 'Bridge2/',
   offsetYZ: [0.5, 0], // offset of the model in 3D along vertical and depth axis
   scale: 2.5
 };
 
 let THREECAMERA = null;
 
-
 // build the 3D. called once when Jeeliz Face Filter is OK
 function init_threeScene(spec){
   const threeStuffs = JeelizThreeHelper.init(spec, null);
-
-  // CREATE THE ENVMAP:
-  // const path = SETTINGS.cubeMapURL;
-  // const format = '.jpg';
-  // const envMap = new THREE.CubeTextureLoader().load( [
-    // path + 'posx' + format, path + 'negx' + format,
-    // path + 'posy' + format, path + 'negy' + format,
-    // path + 'posz' + format, path + 'negz' + format
-  // ] );
 
   // IMPORT THE GLTF MODEL:
   // from https://threejs.org/examples/#webgl_loader_gltf
   const gltfLoader = new THREE.GLTFLoader();
   gltfLoader.load( SETTINGS.gltfModelURL, function ( gltf ) {
     gltf.scene.traverse( function ( child ) {
-      // if ( child.isMesh ) {
-        // child.material.envMap = envMap;
-      // }
     } );
     gltf.scene.frustumCulled = false;
     
@@ -49,7 +33,6 @@ function init_threeScene(spec){
 
     // CREATE LIGHT
     const ambientLight = new THREE.AmbientLight(0XFFFFFF, 2);
-    // 10 for jets helmet
     threeStuffs.scene.add(ambientLight);
 
     // dispatch the model:

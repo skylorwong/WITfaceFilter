@@ -37,31 +37,6 @@ function init_threeScene(spec) {
     }
   )
 
-  // // We load the font that we'll use to display 3D text:
-  // const fontLoader = new THREE.FontLoader();
-
-  // fontLoader.load(
-  //   './fonts/helvetiker_regular.typeface.json',
-  //   (font) => {
-  //     const textGeometry = new THREE.TextGeometry('I love the Jets!', {
-  //       font: font,
-  //       size: 0.25,
-  //       height: 0.1,
-  //       curveSegments: 12,
-  //     });
-
-  //     const textMesh = new THREE.Mesh(textGeometry, new THREE.MeshBasicMaterial({
-  //       color: 0x013220
-  //     }));
-      
-  //     textMesh.rotation.y = 3;
-  //     textMesh.rotation.z = 0.3;
-  //     textMesh.position.x += 1.5;
-  //     textMesh.position.y += 1;
-  //     threeStuffs.faceObject.add(textMesh);
-  //   }
-  // );
-
   // CREATE THE VIDEO BACKGROUND
   function create_mat2d(threeTexture, isTransparent){ //MT216 : we put the creation of the video material in a func because we will also use it for the frame
     return new THREE.RawShaderMaterial({
